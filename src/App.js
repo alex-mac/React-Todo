@@ -6,7 +6,7 @@ import List from './List/list';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="list">
         <input type="text" />
         <List />
       </div>
