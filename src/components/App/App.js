@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import List from './List/list';
+import VisibleTodoList from '../../containers/VisibleTodoList/VisibleTodoList'
+import AddTodo from '../../containers/AddTodo/AddTodo'
 
 class App extends Component {
   render() {
     return (
       <div className="list">
-        <input type="text" />
-        <List />
+        <AddTodo />
+        <VisibleTodoList />
       </div>
     );
   }
 }
 
 export default App;
+
+
