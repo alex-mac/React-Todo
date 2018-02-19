@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './todo.css'
 
 const Todo = ({onClick, completed, text}) => (
   <li

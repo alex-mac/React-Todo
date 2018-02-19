@@ -20,7 +20,27 @@ previousState, action) => newState
 
 */
 
-const todos = (state = [], action) => {
+const todos = (
+  state = [
+    {
+      id: 0,
+      text: 'Buy Apples',
+      complated: false
+    },
+    {
+      id: 1,
+      text: 'Buy Oranges',
+      complated: false
+    },
+    {
+      id: 2,
+      text: 'Buy Bananas',
+      complated: false
+    },
+  ], 
+  action
+
+) => {
   switch (action.type) {
     case 'ADD_TODO':
       return [
